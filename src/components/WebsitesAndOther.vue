@@ -126,13 +126,11 @@ export default {
 }
 
 .grid-embed {
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
   border: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  zoom: 0.3;
+  transform: scale(0.5);
+  transform-origin: 0 0;
 }
 
 /* Media query for mobile devices */
