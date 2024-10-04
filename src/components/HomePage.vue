@@ -99,7 +99,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Adjust as needed */
+  height: 200px;
 }
 
 .bubble {
@@ -108,7 +108,7 @@ export default {
   background-color: #2c3e50;
   border-radius: 50%;
   animation: deform 100s infinite;
-  -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+  -webkit-animation-timing-function: linear; 
   animation-timing-function: linear;
 }
 

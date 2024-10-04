@@ -83,6 +83,6 @@ export default {
 @import './assets/styles.css';
 
 section {
-  height: 100%; /* Each section occupies the full height of the viewport */
+  height: 100%; 
 }
 </style>

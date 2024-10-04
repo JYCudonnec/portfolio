@@ -20,10 +20,10 @@
           <iframe :src="neuroEmbed" class="grid-embed" frameborder="0"></iframe>
         </div>
       </div>
-      <div class="grid-item" @click="openUrl('https://www.b2ai.fr')">
+      <div class="grid-item" @click="openUrl('https://b2ai.fr')">
         <div class="item-content">
           <img :src="b2aiSrc" alt="B2ai Logo" class="grid-image">
-          <p class="grid-text"><b>Sytèmes connectés pour bâtiments intelligents</b><br><i>Wordpress - Intégration de maquettes & Édition de contenu</i></p>
+          <p class="grid-text"><b>Systèmes connectés pour bâtiments intelligents</b><br><i>Wordpress - Intégration de maquettes - Thème personnalisé</i></p>
         </div>
         <div class="iframe-container">
           <iframe :src="b2aiEmbed" class="grid-embed" frameborder="0"></iframe>
@@ -50,10 +50,12 @@ export default {
       hikampSrc: require('@/assets/hikamp_logo.png'),
       neuroSrc: require('@/assets/neuroprofiler_logo.png'),
       b2aiSrc: require('@/assets/b2ai_logo.png'),
+      parcoursSrc: require('@/assets/parcoursmetiers_logo.png'),
       hellfestSrc: require('@/assets/hellfest_logo.png'),
       hikampEmbed: 'https://www.hikamp.com',
       neuroEmbed: 'https://www.neuroprofiler.com',
       b2aiEmbed: 'https://www.b2ai.fr',
+      parcoursEmbed: 'https://www.parcoursmetiers.tv',
       hellfestEmbed: 'https://jycudonnec.github.io/running-order/',
     };
   },
@@ -95,7 +97,7 @@ export default {
   align-items: center;
   padding: 10px;
   border: 3px solid rgba(0, 162, 255, 0.7);
-  cursor: pointer; /* Add cursor pointer to indicate clickable items */
+  cursor: pointer; 
 }
 
 .item-content {
@@ -120,26 +122,25 @@ export default {
 .iframe-container {
   width: 100%;
   max-width: 300px;
-  height: 500px; /* Increase the height of the iframe container */
+  height: 500px; 
   overflow: hidden;
   position: relative;
 }
 
 .grid-embed {
-  width: 200%;
-  height: 200%;
+  width: 205%;
+  height: 205%;
   border: none;
   transform: scale(0.5);
   transform-origin: 0 0;
 }
 
-/* Media query for mobile devices */
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr;
   }
   .grid-item {
-    height: auto; /* Adjust height to fit content */
+    height: auto;
   }
   .iframe-container {
     display: none;
@@ -153,7 +154,6 @@ export default {
   }
 }
 
-/* Media query for larger screens */
 @media (min-width: 601px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -161,7 +161,7 @@ export default {
     height: calc(100vh - 65px);
   }
   .grid-item {
-    height: calc(50vh - 120px); /* Adjust height to fit 2 items with gap */
+    height: calc(50vh - 120px); 
     margin: 5%;
   }
 }
