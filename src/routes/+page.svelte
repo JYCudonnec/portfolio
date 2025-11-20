@@ -14,13 +14,28 @@
 
 	let showHeader = false;
 	let showSections = false;
+	let showAproposSection = false;
+	let showCompetencesSection = false;
+	let showRealisationsSection = false;
+	let showAutresSection = false;
+	let isExpanded = false;
+	let animationsComplete = false;
 	let currentPage = null;
 
 	function expandCard() {
+		isExpanded = true;
 		showHeader = true;
 		// Afficher les sections avec un délai après la header bar
 		setTimeout(() => {
 			showSections = true;
+			showAproposSection = true;
+			showCompetencesSection = true;
+			showRealisationsSection = true;
+			showAutresSection = true;
+			// Activer le hover après la fin des animations (0.4s délai + 0.8s animation)
+			setTimeout(() => {
+				animationsComplete = true;
+			}, 1200);
 		}, 400);
 	}
 
@@ -40,7 +55,31 @@
 	}
 
 	function goHome() {
+		// Ferme toutes les pages avec animation
 		currentPage = null;
+		// Désactiver le hover immédiatement
+		animationsComplete = false;
+		// Ferme la header bar
+		showHeader = false;
+		// Ferme les sections avec effet cascade de bas en haut
+		// D'abord "autres" (celle du bas)
+		showAutresSection = false;
+		// Puis "réalisations" avec un léger délai
+		setTimeout(() => {
+			showRealisationsSection = false;
+		}, 200);
+		// Puis "compétences"
+		setTimeout(() => {
+			showCompetencesSection = false;
+		}, 400);
+		// Enfin "à propos"
+		setTimeout(() => {
+			showAproposSection = false;
+		}, 600);
+		// Réafficher la carte de visite après la fin des animations
+		setTimeout(() => {
+			isExpanded = false;
+		}, 800);
 	}
 </script>
 
@@ -58,7 +97,7 @@
 
 	<!-- Sections principales -->
 	<div class="main-sections">
-		<section class="section apropos" class:visible={showSections} on:click={() => openSection('apropos')}>
+		<section class="section apropos" class:visible={showAproposSection} class:animations-complete={animationsComplete} on:click={() => openSection('apropos')}>
 			<div class="section-content">
 				<h2>A propos de moi</h2>
 				<div class="section-body">
@@ -67,7 +106,7 @@
 			</div>
 		</section>
 		
-		<section class="section competences" class:visible={showSections} on:click={() => openSection('competences')}>
+		<section class="section competences" class:visible={showCompetencesSection} class:animations-complete={animationsComplete} on:click={() => openSection('competences')}>
 			<div class="section-content">
 				<h2>Mes Compétences</h2>
 				<div class="section-body">
@@ -76,7 +115,7 @@
 			</div>
 		</section>
 		
-		<section class="section realisations" class:visible={showSections} on:click={() => openSection('realisations')}>
+		<section class="section realisations" class:visible={showRealisationsSection} class:animations-complete={animationsComplete} on:click={() => openSection('realisations')}>
 			<div class="section-content">
 				<h2>Quelques Réalisations</h2>
 				<div class="section-body">
@@ -85,7 +124,7 @@
 			</div>
 		</section>
 		
-		<section class="section autres" class:visible={showSections} on:click={() => openSection('autres')}>
+		<section class="section autres" class:visible={showAutresSection} class:animations-complete={animationsComplete} on:click={() => openSection('autres')}>
 			<div class="section-content">
 				<h2>CV & Contact</h2>
 				<div class="section-body">
@@ -111,7 +150,7 @@
 					<div class="experience-item">
 						<h3>Développeur Web Full-Stack</h3>
 						<p class="location">Full-Remote (2020 - 2025)</p>
-						<p>Développement d'applications web modernes avec <strong>WordPress</strong>, <strong>React</strong>, <strong>Vue.js</strong> et <strong>Node.js</strong>. Conception et débeloppement de sites, création de thèmes et plugins personnalisés, intégration de maquettes complexes, optimisation SEO et performance.</p>
+						<p>Développement d'applications web modernes avec <strong>WordPress</strong>, <strong>React</strong>, <strong>Vue.js</strong> et <strong>Node.js</strong>. Conception et développement de sites, création de thèmes et plugins personnalisés, intégration de maquettes complexes, optimisation SEO et performance.</p>
 					</div>
 					<div class="experience-item">
 						<h3>Assistant d'éducation</h3>
@@ -252,7 +291,7 @@
 					</div>
 					<div class="experience-item">
 						<h3>Missions Freelance</h3>
-						<p>Accompagnement de <strong>PME et startups</strong> dans leur transformation digitale : refonte de sites, développement d'applications métier et conseil en architecture technique.</p>
+						<p>Accompagnement de <strong>PME et startups</strong> dans leur transformation digitale : création ou refonte de sites, développement d'applications métier et conseil en architecture technique.</p>
 					</div>
 					<div class="experience-item">
 						<h3>TMA & Maintenance</h3>
@@ -540,7 +579,7 @@
 		</div>
 	</div>
 
-	<div class="carte-visite" class:hidden={showSections}>
+	<div class="carte-visite" class:hidden={isExpanded}>
 		<div class="profile-image">
 			<img src={profile.photo} alt={profile.nom} />
 		</div>
@@ -616,6 +655,10 @@
 		padding: 1rem;
 		overflow: hidden;
 		box-sizing: border-box;
+		user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
 	}
 
 	.carte-visite {
@@ -630,7 +673,8 @@
 			0 32px 64px rgba(0, 0, 0, 0.2),
 			0 16px 32px rgba(0, 0, 0, 0.1);
 		border: 1px solid rgba(255, 255, 255, 0.3);
-		transition: transform 0.3s ease;
+		opacity: 1;
+		transition: opacity 0.6s ease, transform 0.3s ease;
 	}
 
 	.carte-visite:hover {
@@ -640,7 +684,6 @@
 	.carte-visite.hidden {
 		opacity: 0;
 		pointer-events: none;
-		transition: opacity 0.3s ease;
 	}
 
 	.profile-image {
@@ -858,23 +901,31 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		pointer-events: auto;
+		pointer-events: none;
 		cursor: pointer;
 		position: relative;
 	}
 
-	.section:hover {
+	.section.visible {
+		transform: translateX(0);
+		visibility: visible;
+		pointer-events: auto;
+		transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s, background 0s 0.8s;
+	}
+
+	.section.visible.animations-complete:hover {
 		background: rgba(255, 255, 255, 0.98);
 		transform: translateX(10px);
 		box-shadow: -5px 0 20px rgba(102, 126, 234, 0.3);
+		transition-delay: 0s;
 	}
 
-	.section:hover .section-content h2 {
+	.section.visible.animations-complete:hover .section-content h2 {
 		color: #667eea;
 		transform: translateX(10px);
 	}
 
-	.section:hover::before {
+	.section.visible.animations-complete:hover::before {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -895,12 +946,6 @@
 		background: linear-gradient(135deg, #667eea, #764ba2);
 		opacity: 0;
 		transition: opacity 0.3s ease;
-	}
-
-	.section.visible {
-		transform: translateX(0);
-		visibility: visible;
-		transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s;
 	}
 
 	.section.apropos.visible {
@@ -1039,6 +1084,8 @@
 		color: #4a5568;
 		line-height: 1.6;
 		margin: 0;
+		max-width: 800px;
+		margin: auto !important;
 	}
 
 	.presentation-text strong {
