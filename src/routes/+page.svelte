@@ -1,11 +1,13 @@
 <script>
+	import { base } from '$app/paths';
+	
 	const profile = {
 		nom: "Jean-Yves CUDONNEC",
 		titre: "Développeur Full-Stack",
 		email: "jycudonnec@gmail.com",
 		telephone: "+33 6 03 96 82 05",
 		localisation: "LANNION (22), France",
-		photo: "/images/profile.jpg",
+		photo: `${base}/images/profile.jpg`,
 		presentation: "JavaScript • React • Vue.js • Node.js • WordPress",
 		linkedin: "https://www.linkedin.com/in/jean-yves-cudonnec/"
 	};
@@ -156,7 +158,7 @@
 					<div class="interest-item">
 						<div class="interest-header">
 							<div class="interest-icon">
-								<img src="/images/guitar-icon.png" alt="Guitar icon" />
+								<img src="{base}/images/guitar-icon.png" alt="Guitar icon" />
 							</div>
 							<h3>Musique & Concerts</h3>
 						</div>
@@ -165,7 +167,7 @@
 					<div class="interest-item">
 						<div class="interest-header">
 							<div class="interest-icon">
-								<img src="/images/canivtt-icon.png" alt="Cani-VTT" />
+								<img src="{base}/images/canivtt-icon.png" alt="Cani-VTT" />
 							</div>
 							<h3>Rando & Cani-cross</h3>
 						</div>
@@ -174,7 +176,7 @@
 					<div class="interest-item">
 						<div class="interest-header">
 							<div class="interest-icon">
-								<img src="/images/gaming-icon.png" alt="Gaming" />
+								<img src="{base}/images/gaming-icon.png" alt="Gaming" />
 							</div>
 							<h3>Gaming</h3>
 						</div>
@@ -342,10 +344,10 @@
 				<div class="project-item">
 					<div class="project-visual">
 						<div class="project-logo">
-							<img src="/images/breizhmetal.svg" alt="Breizh Metal Logo" />
+							<img src="{base}/images/breizhmetal.svg" alt="Breizh Metal Logo" />
 						</div>
 						<div class="project-screenshot">
-							<img src="/images/breizhmetal_screen.png" alt="Breizh Metal Screenshot" />
+							<img src="{base}/images/breizhmetal_screen.png" alt="Breizh Metal Screenshot" />
 						</div>
 					</div>
 					<div class="project-content">
@@ -364,10 +366,10 @@
 				<div class="project-item">
 					<div class="project-visual">
 						<div class="project-logo">
-							<img src="/images/hikamp_logo.png" alt="Hikamp Logo" />
+							<img src="{base}/images/hikamp_logo.png" alt="Hikamp Logo" />
 						</div>
 						<div class="project-screenshot">
-							<img src="/images/hikamp_screen.png" alt="Hikamp Screenshot" />
+							<img src="{base}/images/hikamp_screen.png" alt="Hikamp Screenshot" />
 						</div>
 					</div>
 					<div class="project-content">
@@ -385,10 +387,10 @@
 				<div class="project-item">
 					<div class="project-visual">
 						<div class="project-logo">
-							<img src="/images/parcoursmetiers_logo.png" alt="ParcoursMetiers Logo" />
+							<img src="{base}/images/parcoursmetiers_logo.png" alt="ParcoursMetiers Logo" />
 						</div>
 						<div class="project-screenshot">
-							<img src="/images/parcoursmetiers_screen.png" alt="ParcoursMetiers Screenshot" />
+							<img src="{base}/images/parcoursmetiers_screen.png" alt="ParcoursMetiers Screenshot" />
 						</div>
 					</div>
 					<div class="project-content">
@@ -406,10 +408,10 @@
 				<div class="project-item">
 					<div class="project-visual">
 						<div class="project-logo">
-							<img src="/images/neuroprofiler_logo.png" alt="Neuroprofiler Logo" />
+							<img src="{base}/images/neuroprofiler_logo.png" alt="Neuroprofiler Logo" />
 						</div>
 						<div class="project-screenshot">
-							<img src="/images/neuroprofiler_screen.png" alt="Neuroprofiler Screenshot" />
+							<img src="{base}/images/neuroprofiler_screen.png" alt="Neuroprofiler Screenshot" />
 						</div>
 					</div>
 					<div class="project-content">
@@ -427,10 +429,10 @@
 				<div class="project-item">
 					<div class="project-visual">
 						<div class="project-logo">
-							<img src="/images/hellfest_logo.png" alt="Hellfest RO Logo" />
+							<img src="{base}/images/hellfest_logo.png" alt="Hellfest RO Logo" />
 						</div>
 						<div class="project-screenshot">
-							<img src="/images/HellfestRO_screen.png" alt="Hellfest RO Screenshot" />
+							<img src="{base}/images/HellfestRO_screen.png" alt="Hellfest RO Screenshot" />
 						</div>
 					</div>
 					<div class="project-content">
@@ -448,10 +450,10 @@
 				<div class="project-item">
 					<div class="project-visual">
 						<div class="project-logo">
-							<img src="/images/b2ai_logo.png" alt="B2ai Logo" />
+							<img src="{base}/images/b2ai_logo.png" alt="B2ai Logo" />
 						</div>
 						<div class="project-screenshot">
-							<img src="/images/b2ai_screen.png" alt="B2ai Screenshot" />
+							<img src="{base}/images/b2ai_screen.png" alt="B2ai Screenshot" />
 						</div>
 					</div>
 					<div class="project-content">
@@ -518,17 +520,17 @@
 				<div class="cv-container">
 					<div class="cv-preview">
 						<div class="cv-thumbnail">
-							<img src="/images/CV_JYC_dw.pdf" alt="Aperçu CV" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+							<img src="{base}/images/CV_JYC_dw.pdf" alt="Aperçu CV" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
 							<div class="cv-placeholder">
 								<div class="cv-icon">📄</div>
 								<p>CV - Jean-Yves CUDONNEC</p>
 							</div>
 						</div>
 						<div class="cv-actions">
-							<a href="/images/CV_JYC_dw.pdf" target="_blank" class="cv-button view-cv">
+							<a href="{base}/images/CV_JYC_dw.pdf" target="_blank" class="cv-button view-cv">
 								👁️ Visualiser
 							</a>
-							<a href="/images/CV_JYC_dw.pdf" download="CV_Jean-Yves_CUDONNEC.pdf" class="cv-button download-cv">
+							<a href="{base}/images/CV_JYC_dw.pdf" download="CV_Jean-Yves_CUDONNEC.pdf" class="cv-button download-cv">
 								⬇️ Télécharger
 							</a>
 						</div>
