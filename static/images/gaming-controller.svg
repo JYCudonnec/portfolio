@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9f7aea"/>
+      <stop offset="100%" style="stop-color:#805ad5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Corps principal de la manette -->
+  <path d="M25 35 Q20 30 20 45 L20 55 Q20 70 30 70 L70 70 Q80 70 80 55 L80 45 Q80 30 75 35 L70 35 L30 35 Z" 
+        fill="url(#gradient3)" stroke="#4a5568" stroke-width="2"/>
+  
+  <!-- Croix directionnelle -->
+  <g transform="translate(35,50)">
+    <!-- Horizontal -->
+    <rect x="-6" y="-2" width="12" height="4" fill="#2d3748" rx="1"/>
+    <!-- Vertical -->
+    <rect x="-2" y="-6" width="4" height="12" fill="#2d3748" rx="1"/>
+  </g>
+  
+  <!-- Boutons ABXY -->
+  <circle cx="65" cy="45" r="3" fill="#e53e3e" stroke="#2d3748" stroke-width="1"/>
+  <circle cx="72" cy="50" r="3" fill="#48bb78" stroke="#2d3748" stroke-width="1"/>
+  <circle cx="65" cy="55" r="3" fill="#4299e1" stroke="#2d3748" stroke-width="1"/>
+  <circle cx="58" cy="50" r="3" fill="#f6ad55" stroke="#2d3748" stroke-width="1"/>
+  
+  <!-- Gâchettes L1/R1 -->
+  <rect x="25" y="25" width="8" height="4" fill="#4a5568" rx="2"/>
+  <rect x="67" y="25" width="8" height="4" fill="#4a5568" rx="2"/>
+  
+  <!-- Joysticks -->
+  <circle cx="45" cy="60" r="4" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  <circle cx="55" cy="60" r="4" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  
+  <!-- Détails joysticks -->
+  <circle cx="45" cy="60" r="2" fill="#667eea"/>
+  <circle cx="55" cy="60" r="2" fill="#667eea"/>
+  
+  <!-- Boutons Start/Select -->
+  <rect x="47" y="40" width="3" height="2" fill="#4a5568" rx="1"/>
+  <rect x="50" y="40" width="3" height="2" fill="#4a5568" rx="1"/>
+</svg>
