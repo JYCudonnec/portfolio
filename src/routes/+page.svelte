@@ -735,9 +735,10 @@
 		transition: all 0.2s ease;
 		padding: 0rem;
 		border-radius: 8px;
+		margin-top: 0.75rem;
 	}
 
-	.profile-info-item:hover {
+	a.profile-info-item:hover {
 		background: rgba(102, 126, 234, 0.1);
 		color: #667eea;
 		transform: translateX(4px);
