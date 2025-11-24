@@ -155,11 +155,11 @@
 					<div class="experience-item">
 						<h3>Assistant d'éducation</h3>
 						<p class="location">Lycée Auguste Pavie - Guingamp (2012 - 2018)</p>
-						<p>Encadrement des élèves (assiduité, résultats scolaires, discipline, aide aux devoirs), liaison équipe pédagogique/parents, secrétaire jurys de bac. <br><strong>Compétences transversales:</strong> pédagogie, écoute, responsabilités</p>
+						<p>Encadrement des élèves (assiduité, résultats scolaires, discipline, aide aux devoirs), liaison équipe pédagogique/parents, secrétaire jurys de bac. <br><strong>Compétences transversales:</strong> pédagogie, écoute, travail d'équipe</p>
 					</div>
 					<div class="experience-item">
 						<h3>Chargé de recherche / Technicien de laboratoire</h3>
-						<p class="location">UCO-BN - Guingamp (2008 - 2009)</p>
+						<p class="location">UCO-BN • UBO • CHU Lannion (2008 - 2009)</p>
 						<p>Génie génétique et analyse biomédicale, connaissance et pratique des techniques de laboratoires<br><strong>Compétences transversales: </strong>recherche bibiographique, rigueur et minutie, rédaction de rapport</p>
 					</div>
 				</div>
@@ -174,7 +174,7 @@
 					</div>
 					<div class="experience-item">
 						<h3>Ingénieur en Biologie</h3>
-						<p class="location">CNAM en distanciel (2012 - 2016)</p>
+						<p class="location">CNAM (2012 - 2016)</p>
 					</div>
 					<div class="experience-item">
 						<h3>Licence en Biologie</h3>
@@ -559,17 +559,17 @@
 				<div class="cv-container">
 					<div class="cv-preview">
 						<div class="cv-thumbnail">
-							<img src="{base}/images/CV_JYC_dw.pdf" alt="Aperçu CV" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+							<img src="{base}/images/CV_JY_CUDONNEC.pdf" alt="Aperçu CV" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
 							<div class="cv-placeholder">
 								<div class="cv-icon">📄</div>
 								<p>CV - Jean-Yves CUDONNEC</p>
 							</div>
 						</div>
 						<div class="cv-actions">
-							<a href="{base}/images/CV_JYC_dw.pdf" target="_blank" class="cv-button view-cv">
+							<a href="{base}/images/CV_JY_CUDONNEC.pdf" target="_blank" class="cv-button view-cv">
 								👁️ Visualiser
 							</a>
-							<a href="{base}/images/CV_JYC_dw.pdf" download="CV_Jean-Yves_CUDONNEC.pdf" class="cv-button download-cv">
+							<a href="{base}/images/CV_JY_CUDONNEC.pdf" download="CV_Jean-Yves_CUDONNEC.pdf" class="cv-button download-cv">
 								⬇️ Télécharger
 							</a>
 						</div>
@@ -655,10 +655,10 @@
 		padding: 1rem;
 		overflow: hidden;
 		box-sizing: border-box;
-		user-select: none;
+		/* user-select: none;
 		-webkit-user-select: none;
 		-moz-user-select: none;
-		-ms-user-select: none;
+		-ms-user-select: none; */
 	}
 
 	.carte-visite {
