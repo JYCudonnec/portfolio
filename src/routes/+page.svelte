@@ -559,17 +559,17 @@
 				<div class="cv-container">
 					<div class="cv-preview">
 						<div class="cv-thumbnail">
-							<img src="{base}/images/CV_JY_CUDONNEC.pdf" alt="Aperçu CV" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+							<img src="{base}/images/CV_Jean-Yves-Cudonnec.pdf" alt="Aperçu CV" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
 							<div class="cv-placeholder">
 								<div class="cv-icon">📄</div>
 								<p>CV - Jean-Yves CUDONNEC</p>
 							</div>
 						</div>
 						<div class="cv-actions">
-							<a href="{base}/images/CV_JY_CUDONNEC.pdf" target="_blank" class="cv-button view-cv">
+							<a href="{base}/images/CV_Jean-Yves-Cudonnec.pdf" target="_blank" class="cv-button view-cv">
 								👁️ Visualiser
 							</a>
-							<a href="{base}/images/CV_JY_CUDONNEC.pdf" download="CV_Jean-Yves_CUDONNEC.pdf" class="cv-button download-cv">
+							<a href="{base}/images/CV_Jean-Yves-Cudonnec.pdf" download="CV_Jean-Yves_CUDONNEC.pdf" class="cv-button download-cv">
 								⬇️ Télécharger
 							</a>
 						</div>
