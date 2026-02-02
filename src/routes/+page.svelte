@@ -444,24 +444,26 @@
 					</div>
 				</div>
 
+
 				<div class="project-item">
 					<div class="project-visual">
 						<div class="project-logo">
-							<img src="{base}/images/neuroprofiler_logo.png" alt="Neuroprofiler Logo" />
+							<img src="{base}/images/armor-dev_logo.png" alt="B2ai Logo" />
 						</div>
 						<div class="project-screenshot">
-							<img src="{base}/images/neuroprofiler_screen.png" alt="Neuroprofiler Screenshot" />
+							<img src="{base}/images/armor-dev_screen.png" alt="B2ai Screenshot" />
 						</div>
 					</div>
 					<div class="project-content">
-						<h3>Neuroprofiler</h3>
-						<p class="project-subtitle">Site de conseils en investissement</p>
+						<h3>Armor Dev</h3>
+						<p class="project-subtitle">Studio de développement web</p>
 						<div class="project-tech">
 							<span class="tech-tag">WordPress</span>
-							<span class="tech-tag">Thème personnalisé</span>
-							<span class="tech-tag">Gestion multilangues</span>
+							<span class="tech-tag">Intégration de maquettes</span>
+							<span class="tech-tag">Design</span>
+							<span class="tech-tag">Animation</span>
 						</div>
-						<a href="https://neuroprofiler.com" target="_blank" rel="noopener noreferrer" class="project-link">Visiter le site →</a>
+						<a href="https://armor-dev.fr" target="_blank" rel="noopener noreferrer" class="project-link">Visiter le site →</a>
 					</div>
 				</div>
 
@@ -489,24 +491,24 @@
 				<div class="project-item">
 					<div class="project-visual">
 						<div class="project-logo">
-							<img src="{base}/images/armor-dev_logo.png" alt="B2ai Logo" />
+							<img src="{base}/images/neuroprofiler_logo.png" alt="Neuroprofiler Logo" />
 						</div>
 						<div class="project-screenshot">
-							<img src="{base}/images/armor-dev_screen.png" alt="B2ai Screenshot" />
+							<img src="{base}/images/neuroprofiler_screen.png" alt="Neuroprofiler Screenshot" />
 						</div>
 					</div>
 					<div class="project-content">
-						<h3>Armor Dev</h3>
-						<p class="project-subtitle">Studio de développement web</p>
+						<h3>Neuroprofiler</h3>
+						<p class="project-subtitle">Site de conseils en investissement</p>
 						<div class="project-tech">
 							<span class="tech-tag">WordPress</span>
-							<span class="tech-tag">Intégration de maquettes</span>
-							<span class="tech-tag">Design</span>
-							<span class="tech-tag">Animation</span>
+							<span class="tech-tag">Thème personnalisé</span>
+							<span class="tech-tag">Gestion multilangues</span>
 						</div>
-						<a href="https://armor-dev.fr" target="_blank" rel="noopener noreferrer" class="project-link">Visiter le site →</a>
+						<a href="https://neuroprofiler.com" target="_blank" rel="noopener noreferrer" class="project-link">Visiter le site →</a>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
