@@ -141,7 +141,7 @@
 		</div>
 		<div class="page-body">
 			<div class="content-section intro-section">
-				<p class="presentation-text">J'ai <strong>39 ans</strong> et suis <strong>Développeur Web</strong> depuis près de <strong>5 ans</strong>. J'ai une expertise solide en <strong>WordPress</strong>, mais pas seulement. Mon expérience inclut la création de <strong>sites sécurisés et performants</strong>, ainsi que la mise en place de <strong>boutiques en ligne</strong>, le développement de <strong>plugins personnalisés</strong> et d'<strong>applications web sur-mesure</strong>.</p>
+				<p class="presentation-text">J'ai <strong>40 ans</strong> et suis <strong>Développeur Web</strong> depuis près de <strong>5 ans</strong>. J'ai une expertise solide en <strong>WordPress</strong>, mais pas seulement. Mon expérience inclut la création de <strong>sites sécurisés et performants</strong>, ainsi que la mise en place de <strong>boutiques en ligne</strong>, le développement de <strong>plugins personnalisés</strong> et d'<strong>applications web sur-mesure</strong>.</p>
 			</div>
 			
 			<div class="content-section experience-section">
