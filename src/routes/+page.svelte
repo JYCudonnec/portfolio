@@ -149,7 +149,7 @@
 				<div class="experience-grid">
 					<div class="experience-item">
 						<h3>Développeur Web Full-Stack</h3>
-						<p class="location">Full-Remote (2020 - 2025)</p>
+						<p class="location">Full-Remote (2020 - 2026)</p>
 						<p>Développement d'applications web modernes avec <strong>WordPress</strong>, <strong>React</strong>, <strong>Vue.js</strong> et <strong>Node.js</strong>. Conception et développement de sites, création de thèmes et plugins personnalisés, intégration de maquettes complexes, optimisation SEO et performance.</p>
 					</div>
 					<div class="experience-item">
